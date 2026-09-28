@@ -1,4 +1,3 @@
-
 <h1 align="center">Hi, I'm Abhishek Kalagurki</h1>
 
 <h3 align="center">
@@ -6,7 +5,7 @@
 </h3>
 
 <p align="center">
-  E&E Undergraduate at NITK Surathkal
+  E&amp;E Undergraduate at NITK Surathkal
 </p>
 
 <p align="center">
@@ -28,39 +27,70 @@
 
 ## About Me
 
-I'm an Electrical and Electronics Engineering undergraduate at NITK Surathkal, passionate about software engineering and computer systems.
+E&amp;E undergraduate at NITK Surathkal, working mostly in C++, Python, and backend engineering.
 
-- Solved 1,500+ problems on LeetCode, focusing on data structures and algorithms.
-- Interested in systems programming, operating systems, computer architecture, and backend engineering.
-- Building projects involving C++, Python, machine learning, and backend technologies.
-- Exploring the internals of software, from algorithms to operating systems.
+- Solved **1,500+ problems** on LeetCode, focused on data structures and algorithms.
+- Interested in systems programming, operating systems, and computer architecture.
+- Most of my project work sits at the intersection of LLM orchestration and retrieval — building agents that cite their sources rather than hallucinate them.
+- Enjoy working close to the metal: C++, networking, MQTT, threading.
 
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,c,python,js,ts,fastapi,nextjs,react,postgres,docker,git,linux" />
+  <img src="https://skillicons.dev/icons?i=cpp,c,python,js,ts,fastapi,flask,react,postgres,docker,git,linux" />
 </p>
 
+**Languages** C/C++ · Python · JavaScript · TypeScript · SQL
+**Backend** FastAPI · Flask · LangGraph · LangChain · SQLAlchemy · Alembic
+**Frontend** React · Vanilla JS · Vite
+**Databases** PostgreSQL · MongoDB Atlas
+**Tools** Docker · Git · CMake · MQTT
+
+---
 
 ## Featured Projects
 
-### [LEGAL-AI](https://github.com/ab-kg/LEGAL-AI)
-AI-powered legal document analysis and retrieval.
+### [Fieldnotes — AI Research Agent](https://github.com/ab-kg/RESEARCH-AGENT)
 
-- Document processing, embeddings, and semantic search.
-- Exploring NLP techniques for extracting insights from legal documents.
+[![Live Demo](https://img.shields.io/badge/demo-Live%20on%20Railway-success?style=for-the-badge)](https://research-agent2-production.up.railway.app/)
+
+*Python · TypeScript · LangGraph · FastAPI · React · PostgreSQL · Docker · Railway*
+
+Turns a question into a source-linked briefing, where every factual claim is traceable to a numbered source.
+
+- Built a four-stage LangGraph state machine (`plan → search → assess → write`) with a bounded conditional loop that guarantees termination and caps each run at **2–3 LLM calls**.
+- Designed retrieval grounding and **prompt-injection defenses**: evidence is passed to the model explicitly marked as untrusted data, with inline `[S1]–[S8]` citation IDs the writer must reuse rather than fabricate.
+- Containerized a **multi-stage Docker build** where Node compiles the React/TypeScript frontend and Python serves it alongside the API on a single origin — eliminating CORS preflights and a second web service.
+- Deployed to **Railway** with automated GitHub deploys, fail-fast configuration validation, and database connection-wait logic.
+- Implemented JWT + Argon2 authentication and PostgreSQL persistence for user accounts and research history via FastAPI, SQLAlchemy 2.0, and Alembic.
+
+### [Legal Agent — Hybrid GraphRAG](https://github.com/ab-kg/LEGAL-AI)
+
+*Python · JavaScript · FastAPI · MongoDB Atlas · Gemini · Groq · SentenceTransformers*
+
+Grounded contract analysis combining vector search with an extracted Knowledge Graph.
+
+- Designed a hybrid retrieval architecture combining **SentenceTransformers vector search** with a dynamically extracted Knowledge Graph, so answers cite both similar passages and connected entities.
+- Architected a FastAPI backend using **Gemini** for structured Knowledge Graph extraction and **Groq** for low-latency conversational Q&A.
+- Engineered a PDF ingestion pipeline for chunking, embedding generation, and indexing of vectors and graph relationships in MongoDB Atlas.
+- Built a Vanilla JS frontend with multi-session chat, Chart.js contract-classification dashboards, and Vis.js graph visualization.
+
+### [Autonomous Fan System](https://github.com/ab-kg/CNProject)
+
+*Python · Flask · Threading · MQTT · SSE*
+
+An IoT ceiling fan driven by an explainable AI policy engine.
+
+- Built a publish-subscribe message broker with REST APIs and **Server-Sent Events** for real-time telemetry.
+- Built an AI decision engine with temperature modeling, occupancy detection, and explainable scoring.
+- Delivered a Flask dashboard with live telemetry, fan controls, and AI-or-manual mode switching, plus an offline simulation console requiring no external broker.
 
 ### [WEC-REC](https://github.com/ab-kg/WEC-REC)
-Machine learning and recommendation system project.
+
+*Machine learning and recommendation system*
 
 - Recommendation techniques and machine learning pipelines.
 - Data processing and model-driven recommendations.
-
-### [Research Agent](https://github.com/ab-kg/RESEARCH-AGENT)
-AI-powered research agent for automated information retrieval and research.
-
-- Exploring LLM-based agents and retrieval-augmented generation (RAG).
-- Research automation and source-grounded information synthesis.
 
 ---
 
@@ -79,7 +109,6 @@ AI-powered research agent for automated information retrieval and research.
 <p align="center">
   <a href="https://leetcode.com/u/ab-kg/">View LeetCode Profile</a>
 </p>
-
 
 ---
 
