@@ -85,13 +85,6 @@ An IoT ceiling fan driven by an explainable AI policy engine.
 - Built an AI decision engine with temperature modeling, occupancy detection, and explainable scoring.
 - Delivered a Flask dashboard with live telemetry, fan controls, and AI-or-manual mode switching, plus an offline simulation console requiring no external broker.
 
-### [WEC-REC](https://github.com/ab-kg/WEC-REC)
-
-*Machine learning and recommendation system*
-
-- Recommendation techniques and machine learning pipelines.
-- Data processing and model-driven recommendations.
-
 ---
 
 ## LeetCode
